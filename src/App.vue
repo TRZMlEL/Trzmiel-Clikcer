@@ -17,7 +17,6 @@
               +1
             </div>
           </transition-group>
-          <input type="number" v-model="inputValue" @keyup.enter="addToCount" placeholder="Wprowadź liczbę">
         </div>
       </div>
       <div class="flex w-full h-1/5 gap-4 p-4">
@@ -31,22 +30,22 @@
       <header class="h-1/6 flex items-center justify-center">
         <h1 class="text-4xl font-bold mb-4 text-white text-center p-4">SKLEP</h1>
       </header>
-      <main class="grid grid-cols-2 grid-rows-3 gap-2 p-4 w-full h-5/6">
+      <main class="grid grid-cols-2 grid-rows-3 gap-2 p-4 w-full h-5/6 select-none">
         <div class="bg-zinc-900 w-full h-full rounded-xl p-2">
-          <img src="../img/buyBee.png" class="w-full h-2/3 rounded-lg" />
+          <img src="../img/buyBee.png" class="w-full h-2/3 rounded-lg" draggable="false" />
           <div class="h-1/3 w-full flex items-center justify-between">
             <p class="text-white">{{ beesCount }} bees</p>
             <button @click="buyBee" class="text-zinc-50 text-md hover:text-zinc-900 hover:bg-zinc-300 font-semibold bg-zinc-700 rounded-md px-6 py-2 select-none">
-              <p class="align-text-bottom">BUY for {{ beeCost }}<span class="align-text-top">🍯</span></p>
+              <p class="align-text-bottom">KUP za {{ beeCost }}<span class="align-text-top">🍯</span></p>
             </button>
           </div>
         </div>
         <div class="bg-zinc-900 w-full h-full rounded-xl p-2">
-          <img src="../img/buyHive.png" class="w-full h-2/3 rounded-lg" />
+          <img src="../img/buyHive.png" class="w-full h-2/3 rounded-lg" draggable="false" />
           <div class="h-1/3 w-full flex items-center justify-between">
             <p class="text-white">{{ hivesCount }} hives</p>
             <button @click="buyHive" class="text-zinc-50 text-md hover:text-zinc-900 hover:bg-zinc-300 font-semibold bg-zinc-700 rounded-md px-6 py-2 select-none">
-              <p class="align-text-bottom">BUY for {{ hiveCost }}<span class="align-text-top">🍯</span></p>
+              <p class="align-text-bottom">KUP za {{ hiveCost }}<span class="align-text-top">🍯</span></p>
             </button>
           </div>
         </div>
